@@ -34,9 +34,10 @@ const lookup = {
 function rot13(encodedStr) {
   let decodedArr = []; // Your Result goes here
 
-	for (let i = 0; i < encodedStr.length(); i++) {
+	for (let i = 0; i < encodedStr.length() ; i++) {
 		let c = encodedStr.charAt(i);
-		if(lookup.has(c)){
+		
+		if (c!= " "){
 			decodedArr.push(lookup.get(c))
 		}
 		else{
